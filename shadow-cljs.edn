@@ -1,0 +1,9 @@
+{:deps   {}
+ :nrepl  {:port 59122}
+ :builds {:app {:target           :browser
+                :output-dir       "public/js"
+                :asset-path       "js"
+                :compiler-options {:closure-defines {goog.LOCALE "en"}}
+                :devtools         {:http-root "public"
+                                   :http-port 8082}
+                :modules          {:main {:entries [my-module]}}}}}
